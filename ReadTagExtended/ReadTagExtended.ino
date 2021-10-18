@@ -62,9 +62,9 @@ void loop() {
 
 void notif()
 {
-    digitalWrite(OUT_BUZZER, HIGH);
+    tone(OUT_BUZZER, 300);
     digitalWrite(OUT_LED, LOW);
     delay(300);
-    digitalWrite(OUT_BUZZER, LOW);
+    noTone(OUT_BUZZER);
     digitalWrite(OUT_LED, HIGH);
 }
